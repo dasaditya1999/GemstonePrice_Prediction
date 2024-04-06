@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np
 from src.logger.logging import logging
 from src.exception.exception import customexception
-
-
 import os
 import sys
 from sklearn.model_selection import train_test_split
@@ -24,7 +22,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("data ingestion started")
         try:
-            data=pd.read_csv("https://raw.githubusercontent.com/sunnysavita10/fsdsmendtoend/main/notebooks/data/gemstone.csv")
+            data=pd.read_csv("artifacts/train_main_data.csv")
             logging.info(" reading a df")
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
@@ -42,8 +40,6 @@ class DataIngestion:
             logging.info("data ingestion part completed")
             
             return (
-                 
-                
                 self.ingestion_config.train_data_path,
                 self.ingestion_config.test_data_path
             )
