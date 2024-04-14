@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/adityanarayandas/Documents/mlops-project-2/firstproject/mlruns/0/0ff1af5a435346aba90c4da1d9aa5377/artifacts
+end_time: 1713072762631
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0ff1af5a435346aba90c4da1d9aa5377
+run_name: rumbling-ray-505
+run_uuid: 0ff1af5a435346aba90c4da1d9aa5377
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713072761180
+status: 3
+tags: []
+user_id: adityanarayandas
